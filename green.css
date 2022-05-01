@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+    --red: #ff3838;
+}
+
+*::selection {
+    background: var(--red);
+    color: #fff;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+    /* padding: 1rem 1rem; */
+    /* margin: 1rem 4rem; */
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    letter-spacing: 0.1rem;
+}
+
+body {
+    background: black;
+    color: #eee;
+    /* background: url("ui2.jpg"); */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .container p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: 600;
+    color:rgb(196, 196, 11);
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+  .hr {
+      width: 70%;
+      color: rgb(34, 13, 13);
+  }
+.center {
+    text-align: center;
+    padding: 0 5rem;
+    margin: .5rem;
+    border: .5;
+    font-weight: 100;
+}
+
+#gf {
+    font-size: 1.2rem;
+    color: rgb(196, 196, 11);
+    text-justify: center;
+    transition: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 0.125rem solid rgb(196, 196, 11);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(34, 13, 13);
+    transition: 0.3s linear;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: yellow;
+}
+
+/* .share {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 2rem;
+} */
+
+.footer .share {
+    display: flex;
+    gap: 1rem;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    border-top: 2rem;;
+}
+
+
+.social__media {
+    max-width: 5000px;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 40px auto 0 auto;
+}
+
+.website__rights a {
+color: rgb(196, 196, 11);
+text-decoration: none;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.website__rights {
+    color: #fff;
+    font-size: .9rem;
+    text-align: center;
+    padding: 0;
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .footer__links {
+        padding-top: 2rem;
+    }
+    .social__media--wrap .social__icons {
+        margin-bottom: 10px;
+        padding: 0;
+        border: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    #footer__logo {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .website__rights {
+        margin-bottom: .5rem;
+        align-items: center;
+        align-content: center;
+    }
+    .footer__link--wrapper {
+        flex-direction: column;
+    }
+    .social__media--wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    header, #gf, .btn, .website__rights, .social__icons {
+        font-size: 80%;
+    }
+    .footer__link--items {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
