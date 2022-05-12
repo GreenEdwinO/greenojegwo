@@ -30,6 +30,9 @@ body {
     background: url("bk.jpg");
 }
 
+h1 {
+    font-size: 2rem;
+}
 img {
     max-width: 150px;
     max-height: 150px;
@@ -61,7 +64,8 @@ header {
     border: 0;
   }
   .container p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     padding: 0.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -101,10 +105,19 @@ header {
     margin: 0 .7rem;
     border: 0 .7rem;
     font-weight: none;
+    font-weight: 300;
+}
+.center h3 {
+    font-size: 1.1rem;
+    justify-content: center;
+    font-weight: 400;
+    text-indent: 12px;
+    margin-bottom: 0;
 }
 
 #gf h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: rgb(196, 196, 11);
     text-justify: center;
     transition: none;
@@ -117,8 +130,8 @@ header {
     border: 0.125rem solid rgb(196, 196, 11);
     color: #fff;
     cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
     border-radius: 0.5rem;
     position: relative;
@@ -155,9 +168,10 @@ header {
     justify-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: .5rem;
-    margin-top: .5rem;
-    border-top: .5rem;;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -172,13 +186,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 50px auto 0 auto;
     padding: 50px auto 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    border: 0.001rem solid #eee;
+    border: 0.125rem solid #eee;
     border-style: dashed;
     border-radius: 1rem;
     background: transparent;
@@ -205,13 +219,18 @@ text-decoration: none;
 
 @media screen and (max-width: 920px) {
     
-    header h1, h3 {
-        font-size: 1.em;
+    header h1 {
+        font-size: 1.35rem;
+        font-weight: 500;
     }
     
     body {
         padding: 5px;
         margin: 5px;
+        max-height: 100vh;
+    }
+    .container p {
+        font-size: 1.2rem;
     }
     .center {
         text-align: center;
@@ -220,7 +239,7 @@ text-decoration: none;
         
     }
     .footer__links {
-        padding-top: 2rem;
+        padding-top: 1rem;
         font-size: .6rem;
 
     }
@@ -236,6 +255,7 @@ text-decoration: none;
         margin-bottom: 1rem;
         font-size: 1rem;
     }
+    /* //mmm */
     .website__rights {
         margin-bottom: .5rem;
         align-items: center;
@@ -247,6 +267,9 @@ text-decoration: none;
     .social__media--wrap {
         flex-direction: column;
     }
+    .social__media .social__media--wrap p {
+        font-size: .7rem;
+      }
 }
 
 @media screen and (max-width: 429px) {
@@ -259,8 +282,8 @@ text-decoration: none;
         /* font-size: 1rem; */
     }
 
-    #gf {
-        font-size: .6rem; 
+    #gf h3 {
+        font-size: 1rem; 
     }
 
     .center {
@@ -269,17 +292,25 @@ text-decoration: none;
         justify-content: center;
         padding: 0 5px;
     }
+
+    .center h3 {
+        font-size: .8rem;
+
+    }
     img {
         max-width: 60%;
     }
 
-    header, #gf, .btn, .website__rights, .social__icons {
-        font-size: .6rem;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+    header, #gf, .btn {
+            font-size: .7rem;
+            text-align: center;
+          justify-items: center;
+            } 
 
-    }
+            .website__rights {
+                font-size: .5rem;
+            
+    } 
     .footer__link--items {
         margin: 0;
         padding: 10px;
