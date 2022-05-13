@@ -313,7 +313,7 @@ margin-bottom: 1rem;
 }
 
 .services__card h5 {
-  font-size: .9rem;
+  font-size: 1rem;
   text-align: center;
   text-align: center;
   margin-top: 24px;
@@ -321,7 +321,7 @@ margin-bottom: 1rem;
   padding: 0 8px;
   color: navy;
   letter-spacing: 1px;
-  ;
+  font-weight: 600;
 }
 
 .services__btn {
