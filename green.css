@@ -168,10 +168,10 @@ header {
     justify-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -192,7 +192,7 @@ header {
     padding: 50px auto 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    border: 0.125rem solid #eee;
+    border: 0.115rem solid #eee;
     border-style: dashed;
     border-radius: 1rem;
     background: transparent;
