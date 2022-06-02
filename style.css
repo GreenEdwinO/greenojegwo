@@ -663,8 +663,8 @@ justify-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200%;
-  width: 200%;
+  height: 100%;
+  width: 100%;
 }
 
 .loader.fade-out {

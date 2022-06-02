@@ -59,7 +59,16 @@ navLogo.addEventListener('click', hideMobileMenu);
 
  setTimeout(() => document.getElementById("delay").textContent = "Work Done So Far", 10000);
 
-
+ loader = () => {
+    document.querySelector(".loader").classList.add("fade-out");
+  }
+  
+  fadeOut = () => {
+    setInterval(loader, 3000);
+  }
+  
+  window.onload = fadeOut();
+  
 // var modal = document.getElementById('id01');
 
 // // When the user clicks anywhere outside of the modal, close it

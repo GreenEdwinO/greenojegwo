@@ -32,7 +32,7 @@ body {
 h1 {
     font-size: 2rem;
 }
-img {
+.headman img {
     max-width: 150px;
     max-height: 150px;
     background: transparent;
@@ -215,7 +215,6 @@ text-decoration: none;
     text-align: center;
     padding: 0;
 }
-
 .loader {
     position: fixed;
     top: 0;
