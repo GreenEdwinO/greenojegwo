@@ -39,3 +39,13 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+loader = () => {
+  document.querySelector(".loader").classList.add("fade-out");
+}
+
+fadeOut = () => {
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();

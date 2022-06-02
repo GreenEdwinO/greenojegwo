@@ -12,7 +12,7 @@ const mobileMenu = () => {
 menu.addEventListener('click', mobileMenu)
 
 //to show active bar while scrolling
-const highlightMenu = () => {
+var highlightMenu = () => {
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home-page')
     const aboutMenu = document.querySelector('#about-page')
@@ -57,7 +57,7 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
- setTimeout(() => document.getElementById("delay").innerHTML = 'Work Done So Far', 10000);
+ setTimeout(() => document.getElementById("delay").textContent = "Work Done So Far", 10000);
 
 
 // var modal = document.getElementById('id01');

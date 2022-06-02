@@ -654,6 +654,24 @@ justify-items: center;
   /* text-decoration: solid; */
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200%;
+  width: 200%;
+}
+
+.loader.fade-out {
+  top: -120%;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 920px) {
   html, body {
     overflow-x: hidden;

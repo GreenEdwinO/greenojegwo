@@ -57,10 +57,10 @@
       <h1>Some Details About Me:</h1>
       <div class="services__wrapper">
         <div class="services__card">
-          <h3>Web Developer</h3>
+          <h3>Developer</h3>
           <h5>
             I build everything Frontend and in between professionally, as a result focused Frontend Developer, with
-            eyes for great web development design. I also love caring and using software as a solution for the restoration of the Environment!
+            eyes for great web development design. I love caring for, likewise using software as a solution for, the restoration of the Environment!
 
           </h5>
           <div class="services__btn"><button><a
@@ -68,9 +68,9 @@
         </div>
         <div class="services__card">
           <h3>Environmental Scholar</h3>
-          <h5>A graduate of Geographic Information System (GIS) and Geography and Resource Management [BSc],
+          <h5>BSc with major in Geographic Information System (GIS), Geography and Resource Management, an astute Environmentalist (FEMA Scholar), and a Technical Writer:
 
-            I'm passionate about the Internet of Things, as an astute Environmentalist (FEMA Scholar) and a Technical Writer, besides being a Developer.
+            I'm passionate about the Internet of Things.
           </h5>
           <div class="services__btn"><button><a
                 href="mailto:greenojegwo@gmail?subject= Green, I Need Your Services&body=Please read, delete and input your message here. [Note: in the email address above kindly add '.com' -this is done to prevent internet Bots]">Get in touch</a></button></div>
@@ -86,9 +86,8 @@
         </div>
         <div class="services__card">
           <h3>Hard Working</h3>
-          <h5> As a hard working young man, I'm very open to collaborate and to help where needed!! <br>
-            ~At the end of the 'day' everything we do should create a Better Environment, keeping the Earth Safe for our
-            own good.</h5>
+          <h5> Everything I create is in service of growing your business. And I believe it's best when we put our whole heart into it.  <br>
+            ~Towards creating a Better Environment, I'm very open to collaborate and to help where needed.</h5>
           <div class="services__btn"><button><a
                 href="mailto:greenojegwo@gmail?subject= Green, I Need Your Services&body=Please read, delete and input your message here. [Note: in the email address above kindly add '.com' -this is done to prevent internet Bots]">Get in touch</a></button></div>
         </div>
@@ -100,6 +99,7 @@
   <div class="about-container">
     <div class="projects-container">
       <div class="project">
+        <div id="delay"></div>
         <h3 class="project-name">Websites Designed</h3>
         <div class="project-number odometer websites-designed">0</div>
       </div>
@@ -183,10 +183,10 @@
     const websitesDesigned = document.querySelector(".websites-designed");
     const appsdeveloped = document.querySelector(".apps-developed");
 
-    setTimeout(() => {
-      websitesDesigned.innerHTML = "23";
-      appsdeveloped.innerHTML = "8";
-    },2000);
+ setInterval(() => {
+      websitesDesigned.textContent = "23";
+      appsdeveloped.textContent = "8";
+    }, 2000);
   </script>
 </body>
 </html>
