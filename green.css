@@ -27,14 +27,14 @@ body {
     margin-left: 5rem;
     margin-right: 5rem;
     background: url("bk.jpg");
-    max-height: 100vh;
+    height: 100vh;
 }
 
 h1 {
     font-size: 2rem;
-    margin: 3rem;
-    border-top: 1rem;
+    margin: 2rem;
 }
+
 .headman img {
     max-width: 150px;
     max-height: 150px;
