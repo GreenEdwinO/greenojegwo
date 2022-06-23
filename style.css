@@ -726,7 +726,27 @@ justify-items: center;
   }
  }
 
-.loader {
+
+/* scroll section */
+
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  background: red;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: 0.1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 4rem);
+}
+
+/* .loader {
   position: fixed;
   top: 0;
   right: 0;
@@ -742,7 +762,7 @@ justify-items: center;
 .loader.fade-out {
   top: -120%;
   background-repeat: no-repeat;
-}
+} */
 
 @media screen and (max-width: 920px) {
   html, body {

@@ -59,15 +59,15 @@ navLogo.addEventListener('click', hideMobileMenu);
 
  setTimeout(() => document.getElementById("delay").textContent = "Work Done So Far", 10000);
 
- loader = () => {
-    document.querySelector(".loader").classList.add("fade-out");
-  }
+//  loader = () => {
+//     document.querySelector(".loader").classList.add("fade-out");
+//   }
   
-  fadeOut = () => {
-    setInterval(loader, 3000);
-  }
+//   fadeOut = () => {
+//     setInterval(loader, 3000);
+//   }
   
-  window.onload = fadeOut();
+//   window.onload = fadeOut();
   
 // var modal = document.getElementById('id01');
 
@@ -84,13 +84,11 @@ navLogo.addEventListener('click', hideMobileMenu);
 //     navbar.classList.toggle("active");
 // };
 
-// window.onscroll = () => {
-//     menu.classList.remove("fa-times");
-//     navbar.classList.remove("active");
+window.onscroll = () => {
 
-//     if (window.scrollY > 60) {
-//         document.querySelector("#scroll-top").classList.add("active");
-//     } else {
-//         document.querySelector("#scroll-top").classList.remove("active");
-//     }
-// };;
+    if (window.scrollY > 60) {
+        document.querySelector("#scroll-top").classList.add("active");
+    } else {
+        document.querySelector("#scroll-top").classList.remove("active");
+    }
+};
