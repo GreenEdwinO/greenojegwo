@@ -1,10 +1,10 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["contributing to open source", "writing technical contents", "being a Public Speaker", "to Code for a living"];
+const textArray = ["Contributing to Open Source", "Writing Technical Contents", "Being a Public Speaker", "to Code for a Living"];
 const typingDelay = 200;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 3000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -39,3 +39,13 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+loader = () => {
+  document.querySelector(".loader").classList.add("fade-out");
+}
+
+fadeOut = () => {
+  setInterval(loader, 3000);
+}
+
+window.onload = fadeOut();
