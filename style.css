@@ -236,7 +236,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -668,7 +668,7 @@ justify-items: center;
   color: white;
   font-size: 1.1rem;
   margin: 0 0 20px 0;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 4px;
   z-index: 1;
  }
@@ -738,7 +738,7 @@ justify-items: center;
 }
 button {
   margin: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   text-decoration-style: none;
 }
@@ -852,7 +852,7 @@ button {
 }
 
 #scroll-top.active {
-  top: calc(100% - 9.5rem);
+  top: calc(100% - 9rem);
 }
 
 /* .loader {
