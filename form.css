@@ -111,6 +111,10 @@ img {
   user-select: none;
 }
 
+#icon {
+  border-radius: 8px;
+}
+
 img:hover {
   transform: scale(1.1, 1.1);
 }
