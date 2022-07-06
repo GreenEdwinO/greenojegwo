@@ -129,15 +129,18 @@ body {
   }
 
   .navbar__menu.active {
-    background: #131313;
+    background: #000080;
     top: 100%;
-    opacity: 1;
+    opacity: 0.8;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
-    width: 70vw;
+    height: 50vh;
+    width: 120vw;
     font-size: 1.1rem;
     border-radius: 1rem;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0;
   }
 
   #navbar__logo {
@@ -163,9 +166,9 @@ body {
   }
 
   .navbar__links {
-    text-align: center;
-    justify-content: center;
-    padding: 2rem;
+    text-align: left;
+    justify-content: flex-start;
+    padding: 1rem;
     width: 100%;
     display: table;
   }
