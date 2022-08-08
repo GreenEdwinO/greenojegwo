@@ -5,6 +5,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Arimo';
 }
 
 body {
@@ -81,8 +82,9 @@ body {
 h2 {
   font-family: 'Arimo', sans-serif;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
+  font-weight: 400;
   text-align: center;
   transform: scale(.95, 1);
 }
@@ -107,6 +109,10 @@ img {
     drop-shadow(2px 4px 4px #0006);
   transition: 0.2s;
   user-select: none;
+}
+
+#icon {
+  border-radius: 8px;
 }
 
 img:hover {
@@ -264,13 +270,13 @@ button {
 
 @media only screen and (max-width: 800px) {
   h2 {
-    font-size: clamp(40px, 10vw, 60px);
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   h2 {
-    font-size: clamp(30px, 12vw, 60px);
+    font-size: 1.3rem;
   }
   
   .links {

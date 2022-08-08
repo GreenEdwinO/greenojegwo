@@ -4,8 +4,9 @@ body {
 h1 {
   position: relative;
   text-align: center;
-  color: #353535;
-  font-size: 50px;
+  color: #535252;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 p {
@@ -44,6 +45,7 @@ button {
 
 /* 5 */
 .btn-5 {
+  font-size: 1rem;
   width: 130px;
   height: 40px;
   line-height: 42px;
