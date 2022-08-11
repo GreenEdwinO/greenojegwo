@@ -11,7 +11,7 @@ body {
   position: sticky;
 }
 .navbar {
-  background: url(nav.jpg); 
+  background: url(/images/nav.jpg); 
   height: 80px;
   display: flex;
   justify-content: center;
