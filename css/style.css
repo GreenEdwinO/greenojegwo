@@ -188,7 +188,7 @@ body {
 
   #mobile-menu {
     position: absolute;
-    top: 20%;
+    top: 27%;
     right: 5%;
     transform: translate(5%, 20%);
   }
@@ -239,7 +239,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   border-radius: 1rem;
   margin-top: 2rem;
@@ -333,7 +333,12 @@ margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   margin-top: 16px;
-text-decoration: none;
+  text-decoration: none;
+}
+
+.services__btn a:hover {
+  color: greenyellow;
+  font-size: 1.1rem;
 }
 
 .services__card button {
@@ -400,7 +405,8 @@ text-decoration: none;
   }
   .website__rights b {
     text-align: center;
-  justify-items: center;
+    justify-items: center;
+    text-align: center;
     }
 }
 
@@ -408,19 +414,14 @@ text-decoration: none;
 
  .about-container {
    font-size: 1rem;
-  max-width: 300px;
+  max-width: 500px;
   flex-direction: wrap;
-  padding: 1rem;
-  margin: 1rem;
   justify-content: center;
   align-items: center;
 } 
-/* .about-container p {
-  font-size: .3rem;
-} */
-  /* font-size: 1.3rem; */
+
 .website__rights  {
-  font-size: .7rem;
+  font-size: .6rem;
   text-align: center;
 justify-items: center;
   } 
@@ -453,7 +454,7 @@ justify-items: center;
     padding-top: 1rem;
   }
   .website__rights b {
-  font-size: .7rem;
+  font-size: .6rem;
   text-align: center;
 justify-items: center;
   }
@@ -523,7 +524,7 @@ justify-items: center;
 .our-team-heading {
   text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -533,12 +534,13 @@ justify-items: center;
 .our-team {
   color: #eee;
   display: flex;
-  padding: 30px;
+  padding: 10px 20px;
 }
 
 .our-team img {
   width: 100%;
   padding-bottom: 1rem;
+  border-radius: 10px;
 }
 
 .our-team .team-member {
@@ -553,14 +555,13 @@ justify-items: center;
 
 .our-team .team-member a {
   color: #eee;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-top: 1rem;
   font-weight: 450;
 }
 
 #toclick a {
-  font-size: 1.1rem;
-  /* letter-spacing: 1px; */
+  font-size: .9rem;
   color: #000080;
   display: flex;
   flex-direction: column;
@@ -581,11 +582,15 @@ justify-items: center;
   height: 80px;
 }
 
+.social__media .social__media--wrap p {
+  font-size: .7rem;
+}
 
 @media (max-width: 700px) {
   .our-team {
     flex-direction: column;
     align-items: center;
+    padding: 5px 0;
   }
   .about-container p {
     font-size: 1.2rem;
@@ -596,13 +601,13 @@ justify-items: center;
   }
 
   .our-team img {
-    height: 250px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
   .our-team-heading {
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
   #toclick a {
     display: flex;
@@ -628,28 +633,26 @@ justify-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 97%;
   max-width: 1000px;
   margin: 15px auto 0 auto;
-  padding: 50px auto 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
   border: 0.137rem solid #000080;
   border-style: dashed;
-  border-radius: 1rem;
+  border-radius: .5rem;
   background: transparent;
 }
 
 .social__icons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: right;
   width: 240px;
 }
 
 .website__rights {
   color: #000080;
   font-size: 1rem;
+  margin-left: 15%;
 }
 
 .website__rights b {
@@ -669,7 +672,7 @@ justify-items: center;
   position: relative;
   border-width: 0;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 0 20px 0;
   font-weight: 400;
   border-radius: 4px;
@@ -741,7 +744,7 @@ justify-items: center;
 }
 button {
   margin: 20px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   text-decoration-style: none;
 }
@@ -844,10 +847,10 @@ button {
 #scroll-top {
   position: fixed;
   top: -120%;
-  right: 2rem;
+  right: 1rem;
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  background: red;
+  background: transparent;
   color: #fff;
   border-radius: 0.5rem;
   transition: 0.1s linear;
@@ -855,7 +858,7 @@ button {
 }
 
 #scroll-top.active {
-  top: calc(100% - 9rem);
+  top: calc(100% - 5rem);
 }
 
 /* .loader {
@@ -895,7 +898,7 @@ button {
   }
 
   .website__rights {
-    margin-bottom: .5rem;
+    margin: .6rem auto .5rem auto;
     align-items: center;
     align-content: center;
   }
@@ -909,7 +912,7 @@ button {
   }
 
   .social__media .social__media--wrap p {
-    font-size: 1rem;
+    font-size: .7rem;
   }
 }
 
