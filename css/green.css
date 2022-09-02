@@ -195,8 +195,7 @@ header {
     max-width: 1000px;
     margin: 50px auto 0 auto;
     padding: 50px auto 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: .5rem 1.5rem ;
     border: 0.115rem solid #eee;
     border-style: dashed;
     border-radius: 1rem;
@@ -217,7 +216,7 @@ text-decoration: none;
 
 .website__rights {
     color: #fff;
-    font-size: .9rem;
+    font-size: .7rem;
     text-align: center;
     padding: 0;
 }
@@ -277,7 +276,6 @@ text-decoration: none;
         margin-bottom: 1rem;
         font-size: 1rem;
     }
-    /* //mmm */
     .website__rights {
         margin-bottom: .5rem;
         align-items: center;
@@ -288,6 +286,8 @@ text-decoration: none;
     }
     .social__media--wrap {
         flex-direction: column;
+        padding: .1rem .1rem ;
+    
     }
     .social__media .social__media--wrap p {
         font-size: .7rem;
