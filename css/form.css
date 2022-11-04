@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .contact-box {
@@ -52,28 +52,6 @@ body {
 .contact-form-wrapper {
   background-color: #ffffff8f;
   border-radius: 0 10px 10px 0;
-}
-
-@media only screen and (max-width: 800px) {
-
-  .contact-links,
-  .contact-form-wrapper {
-    width: 100%;
-  }
-
-  .contact-box {
-    width: 100%;
-    margin: auto;
-  }
-
-  .contact-links {
-    border-radius: 10px 10px 0 0;
-  }
-
-  .contact-form-wrapper {
-    border-radius: 0 0 10px 10px;
-    padding: 0% 1% 0% 1%;
-  }
 }
 
 .contact-links > h2 {
@@ -262,17 +240,38 @@ button {
   }
 }
 
-
-
 @media only screen and (max-width: 800px) {
+
+  .contact-links,
+  .contact-form-wrapper {
+    width: 100%;
+  }
+
+  .contact-box {
+    width: 100%;
+    margin: .5rem;
+  }
+
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+    padding: 0% 1% 0% 1%;
+  }
+
   fieldset {
     margin-top: 2rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
   }
 
   h2 {
     font-size: 1.5rem;
   }
 }
+
 
 @media only screen and (max-width: 400px) {
   h2 {
