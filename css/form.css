@@ -17,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
 }
 
 .contact-box {
@@ -258,13 +257,12 @@ button {
 
   .contact-form-wrapper {
     border-radius: 0 0 10px 10px;
-    padding: 0% 1% 0% 1%;
+    padding: 1rem;
   }
 
   fieldset {
     margin-top: 2rem;
-    padding-left: .3rem;
-    padding-right: .3rem;
+    padding: .5rem;
   }
 
   h2 {
